@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="demo.tensorflow.org.customvision_sample">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassifierActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".GetLocation" />
+        <activity
+            android:name=".ChatText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VoiceChat"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".Reminder" />
+        <activity android:name=".SettingsActivity" />
+
+        <receiver android:name=".AlertReciever" />
+
+        <activity
+            android:name=".StepCounter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Track" />
+        <activity android:name=".OtherUtilities" />
+        <activity android:name=".Bmi" />
+        <activity
+            android:name=".RemedyVoice"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RemedyChat" />
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+
+        <activity android:name=".HomeRemedy" />
+        <activity android:name=".ChatRemedy" />
+    </application>
+
+</manifest>
