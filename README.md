@@ -8,8 +8,8 @@ DocsBot is a special bot which helps you to analyze health and tracks the sympto
 * Nearby medication
 * Fitness Trackers
   * BMI Calculator
-  * Step Counter
-* Info pages(health tips)
+  * Step Counter</br>
+* Info pages(health tips)</br>
 ![Splash Screen](https://raw.githubusercontent.com/Bhavit1008/DocsBot/master/Screenshots/splash%20compressed.jpg)
 ![Main Screen](https://raw.githubusercontent.com/Bhavit1008/DocsBot/master/Screenshots/main%20compressed.jpg)
 ![Medication](https://raw.githubusercontent.com/Bhavit1008/DocsBot/master/Screenshots/medication%20compressed.jpg)
